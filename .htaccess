@@ -1,7 +1,9 @@
+DirectoryIndex message.php
+
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)$ profile.php?u=$1 [L]
+RewriteRule ^(.*)$ message.php?id=$1 [L]
 
 # Don't list directory contents
 IndexIgnore *
